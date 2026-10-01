@@ -1,0 +1,29 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+
+  // fan papkalari
+  "material-icon-theme.folders.associations": {
+    "subjects": "docs",
+    "mavzular": "markdown",
+    "01-matematik-analiz": "functions",
+    "03-falsafa": "instructions",
+    "04-pedagogika": "class",
+    "05-dasturlash": "src",
+    "06-fizika": "atom"
+  },
+
+  // 02-diff-tenglamalar — functions'ning rangli kloni
+  "material-icon-theme.folders.customClones": [
+    {
+      "name": "diff-eq",
+      "base": "functions",
+      "color": "purple-400",
+      "lightColor": "purple-600",
+      "folderNames": ["02-diff-tenglamalar"]
+    }
+  ],
+
+  "material-icon-theme.files.associations": {
+    "Makefile": "makefile"
+  }
+}
