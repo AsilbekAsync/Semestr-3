@@ -4,7 +4,7 @@
 
 | # | Mavzu | Fayl |
 |---|-------|------|
-| 01 | — | `mavzular/01-*.md` |
+| 01 | ref va out parametrlari | [mavzular/01-ref-va-out.md](mavzular/01-ref-va-out.md) |
 
 ## 📖 LUG'AT
 
@@ -24,3 +24,8 @@
 | Abstraksiya | Abstraction |
 | Istisno | Exception |
 | Interfeys | Interface |
+| Parametr | Parameter |
+| Modifikator | Modifier |
+| Qiymat bo'yicha uzatish | Pass by value |
+| Havola bo'yicha uzatish | Pass by reference |
+| `ref` / `out` | `ref` / `out` keyword |

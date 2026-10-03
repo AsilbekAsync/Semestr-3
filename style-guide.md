@@ -22,7 +22,7 @@
 ## 🛠 MISOL
     if → step → result
 
-## ⚠️ TOSHKANLAR
+## ⚠️ XATOLAR
 - xato variant → to'g'risi
 ```
 
