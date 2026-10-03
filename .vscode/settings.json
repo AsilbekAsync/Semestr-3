@@ -9,7 +9,25 @@
     "03-falsafa": "instructions",
     "04-pedagogika": "class",
     "05-dasturlash": "src",
-    "06-fizika": "atom"
+    "06-fizika": "atom",
+
+    // _input — yuklab olingan xom materiallar
+    "_input": "download",
+    "input": "download",
+
+    // _input fanlari
+    "Algoritmik tillar va dasturlash": "src",
+    "Falsafa": "instructions",
+    "Matematik analiz": "functions",
+    "Umumiy fizika": "atom",
+    "Umumiy pedagogika": "class",
+
+    // dars turlari
+    "Amaliy": "examples",
+    "Ma’ruza": "bibliography",
+    "Seminar": "review",
+    "Mustaqil ta'lim": "resource",
+    "Laboratoriya": "molecule"
   },
 
   // 02-diff-tenglamalar — functions'ning rangli kloni
@@ -19,7 +37,7 @@
       "base": "functions",
       "color": "purple-400",
       "lightColor": "purple-600",
-      "folderNames": ["02-diff-tenglamalar"]
+      "folderNames": ["02-diff-tenglamalar", "Differensial tenglamalar"]
     }
   ],
 
