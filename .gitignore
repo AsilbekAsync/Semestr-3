@@ -6,3 +6,7 @@
 *.out
 *.synctex.gz
 dist/
+tmp/
+
+# _input — yuklab olingan tayyor PDF materiallar (git'ga commit qilinadi)
+!_input/**/*.pdf
