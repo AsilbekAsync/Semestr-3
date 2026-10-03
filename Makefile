@@ -11,15 +11,17 @@ PANDOC_FLAGS := \
 	--toc=false \
 	--variable geometry:margin=1.2cm \
 	--variable fontsize=9pt \
-	--variable mainfont="Noto Serif" \
-	--variable sansfont="Noto Sans" \
+	--variable mainfont="Liberation Serif" \
+	--variable sansfont="Liberation Sans" \
 	--variable monofont="Source Code Pro" \
 	--variable linkcolor=black \
 	--variable urlcolor=black
 
-.PHONY: pdf clean $(shell ls -d subjects/[0-9][0-9]-* 2>/dev/null)
+SUBJECTS := $(notdir $(wildcard subjects/[0-9][0-9]-*))
 
-pdf: $(MD:subjects/%=$(OUT)/%.pdf)
+.PHONY: pdf clean $(SUBJECTS)
+
+pdf: $(patsubst subjects/%.md,$(OUT)/%.pdf,$(MD))
 
 $(OUT)/%.pdf: subjects/%.md
 	@mkdir -p $(OUT)/$(*D)
@@ -27,8 +29,8 @@ $(OUT)/%.pdf: subjects/%.md
 	@echo "OK  $@"
 
 # make 01-matematik-analiz — bitta fan, barcha mavzular bitta PDF
-[0-9][0-9]-*: %: $(wildcard subjects/%/mavzular/*.md)
-	@mkdir -p $(OUT)/$*
+$(SUBJECTS): %:
+	@mkdir -p $(OUT)
 	$(PANDOC) $(wildcard subjects/$*/mavzular/*.md) -o $(OUT)/$*.pdf \
 		$(PANDOC_FLAGS) --metadata title="$*" --toc
 	@echo "OK  $(OUT)/$*.pdf"
