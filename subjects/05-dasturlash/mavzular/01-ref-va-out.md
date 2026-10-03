@@ -1,14 +1,14 @@
-# ⚡ REF VA OUT PARAMETRLARI
+# REF VA OUT PARAMETRLARI
 
 > `ref` / `out` — argumentni havola bo'yicha uzatib, metod ichida o'zgartirish yoki bir nechta qiymat qaytarish.
 
-## 🧠 MUAMMO
+## MUAMMO
 
 - Oddiy turlar (`int`, `char`) **qiymat bo'yicha** uzatiladi → metod argumentning o'zini o'zgartira olmaydi.
 - `return` orqali metod **faqat bitta** qiymat qaytaradi.
 - Yechim: `ref` → argumentni o'zgartirish; `out` → bir nechta qiymat qaytarish.
 
-## 🧠 ref
+## ref
 
 E'londa ham, chaqiruvda ham yoziladi. Argument oldindan initsializatsiya qilingan bo'lishi **shart**.
 
@@ -19,7 +19,7 @@ int a = 10;
 ob.Sqr(ref a);          // a → 100
 ```
 
-## 🧠 out
+## out
 
 E'londa ham, chaqiruvda ham yoziladi. Argumentni oldindan qiymat bilan boshlash **shart emas** (initsializatsiya qilinmagan hisoblanadi), lekin metod tugashidan oldin unga **majburiy qiymat beriladi**.
 
@@ -33,22 +33,22 @@ public int GetParts(double n, out double frac) {
 int i = ob.GetParts(10.125, out double f);   // i = 10, f = 0.125
 ```
 
-## ⚠️ XATOLAR
+## XATOLAR
 
 - `ref` argumentiga chaqiruvdan oldin qiymat bermaslik → kompilyatsiya xatosi.
 - `out` parametriga metod ichida qiymat bermaslik → kompilyatsiya xatosi.
 - Ikkalasi ham e'lon **va** chaqiruvda yozilishi shart: `ob.Sqr(ref a)`, `GetParts(10.125, out f)`.
 
-## ⚠️ ref vs out
+## ref vs out
 
 | | `ref` | `out` |
 |---|---|---|
-| E'lon + chaqiruvda yoziladi | ✅ | ✅ |
+| E'lon + chaqiruvda yoziladi | ha | ha |
 | Oldindan qiymat berish | shart | shart emas |
 | Metod ichida qiymat berish | ixtiyoriy | **majburiy** |
 | Maqsad | kirish + chiqish | faqat chiqish |
 
-## 🛠 NAMUNA — ref bilan qiymatlarni almashtirish
+## NAMUNA — ref bilan qiymatlarni almashtirish
 
 `ref` bo'lmasa `Swap` yozib bo'lmaydi: qiymat bo'yicha uzatilganda `a`/`b` nusxasi o'zgaradi, asl argumentlar o'zgarmaydi.
 
@@ -63,7 +63,7 @@ ob.Swap(ref x, ref y);   // x = 2, y = 1
 
 ---
 
-# 🛠 MASALALAR VA YECHIMLAR
+# MASALALAR VA YECHIMLAR
 
 Nuqtalar koordinatalari berilgan: `A(xa,ya)`, `B(xb,yb)`, `C(xc,yc)`, `D(xd,yd)`.
 Barcha funksiyalar bitta `Geometry` klassida. Asosiy g'oya — kichik funksiyalarni **qayta ishlatish**, natijalar orasida `ref`/`out` kerak bo'lsa qo'llash.
@@ -133,7 +133,7 @@ static void Heights(double xa, double ya, double xb, double yb, double xc, doubl
 }
 ```
 
-## 🛠 Yig'ma yechim (`Main`)
+## Yig'ma yechim (`Main`)
 
 ```csharp
 using System;

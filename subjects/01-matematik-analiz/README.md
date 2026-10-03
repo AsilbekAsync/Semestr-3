@@ -1,4 +1,4 @@
-# 📐 Matematik analiz
+# Matematik analiz
 
 ## Mavzular
 
@@ -6,7 +6,7 @@
 |---|-------|------|
 | 01 | — | `mavzular/01-*.md` |
 
-## 📖 LUG'AT
+## LUG'AT
 
 | Uz | En |
 |----|----|

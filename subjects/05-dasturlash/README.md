@@ -1,4 +1,4 @@
-# 💻 Dasturlash (C#)
+# Dasturlash (C#)
 
 ## Mavzular
 
@@ -6,7 +6,7 @@
 |---|-------|------|
 | 01 | ref va out parametrlari | [mavzular/01-ref-va-out.md](mavzular/01-ref-va-out.md) |
 
-## 📖 LUG'AT
+## LUG'AT
 
 | Uz | En |
 |----|----|
